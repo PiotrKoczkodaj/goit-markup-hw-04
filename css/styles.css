@@ -9,10 +9,6 @@ body {
   padding: 0;
   margin: 0 auto; 
 }
-#icon-envelope
-{
-  fill: black;
-}
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -142,12 +138,13 @@ ul
   color: var(--third-color);
   margin-top: 32px;
   margin-bottom: 31px;
-  margin-left: 371px;
   margin-right: 50px;
 
 }
 .header-mail:hover {
   color: var(--mark-color);
+  fill: #2196f3;
+ 
 }
 .header-mail:focus {
   color: var(--mark-color);
@@ -164,6 +161,7 @@ ul
     margin-bottom: 31px;
     margin-left: 0;
     margin-right: 0;
+    display: flex;
 }
 .header-tel:hover 
 {
@@ -707,3 +705,5 @@ margin-left: 24px;
 {
   margin-left: 46px;
 }
+
+/*=============================================IKONY SVG==============================================*/
