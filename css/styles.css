@@ -139,6 +139,7 @@ ul
   margin-top: 32px;
   margin-bottom: 31px;
   margin-right: 50px;
+  display: flex;
 
 }
 .header-mail:hover {
@@ -707,3 +708,18 @@ margin-left: 24px;
 }
 
 /*=============================================IKONY SVG==============================================*/
+.icon-envelope
+{
+  fill: currentColor;
+}
+.icon-smartphone
+{
+  height: 10;
+  width: 16;
+}
+.phone
+{
+  width: 10;
+  height: 16;
+  box-sizing: border-box;
+}
