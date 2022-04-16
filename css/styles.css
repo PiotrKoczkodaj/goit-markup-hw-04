@@ -705,17 +705,17 @@ margin-left: 24px;
 .icon-envelope
 {
   fill: currentColor;
+  margin-right: 10px;
 }
-.icon-smartphone
+use.phone
 {
-  height: 10;
-  width: 16;
+  width: 10px;
+  height: 16px;
 }
 .phone
-{
-  width: 10;
-  height: 16;
-  box-sizing: border-box;
+{ margin: 0;
+  width: 10px;
+  height: 16px;
   fill: currentColor;
 }
 .lorem-icon-box
@@ -735,6 +735,15 @@ margin-left: 24px;
   list-style-type: none;
   display: flex;
 
+}
+.icon-smartphone
+{
+  margin-right: 10px;
+}
+.icon-smartphone.phone
+{
+  min-width: 10px;
+  min-height: 16px;
 }
 .icon-gallery-workers-list-item
 {
@@ -767,34 +776,41 @@ margin-left: 24px;
 {
   border: #212121 solid 4px;
 }
-.fourth-section-list-item
+.fourth-section-list-item:not(:first-child)
 {
   list-style-type: none;
   width: 170px;
   height: 92px;
   display: flex;
+  margin: 0;
+  margin-left: 30px;
 }
+.fourth-section-list-item-first
+{
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .fourth-section-list
 {
   display: flex;
+  margin-top: 50px;
+  margin-bottom: 94px;
 }
 .fourth-list-icon
 {
-  border: #212121 solid 1px;
-  display: flex;
-  align-items: center;
-  
- 
+  margin: 0;
 }
 .fourth-section-link
 {
-  width: 106px;
-  height: 60px;
-  padding-top: 18px;
-  padding-bottom: 14px;
-  padding-left: 32px;
-  padding-right:32px
-  
+  width: 170px;
+  height: 92px; 
+  border: #212121 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
 .text-footer
 {
@@ -811,17 +827,13 @@ margin-left: 24px;
 {
   width: 206px;
   height: 80px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
 
 }
-.right-side-footer .text-footer
-{
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
+
 .icons-footer-list-item
 {
   list-style-type: none;
