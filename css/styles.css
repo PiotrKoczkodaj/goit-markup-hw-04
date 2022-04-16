@@ -803,9 +803,24 @@ margin-left: 24px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 113px;
+  height: 16px;
+}
+
+.right-side-footer
+{
+  width: 206px;
+  height: 80px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  
+  align-items: center;
+
+}
+.right-side-footer .text-footer
+{
+  display: flex;
+  align-items: center;
+  margin: auto;
 }
 .icons-footer-list-item
 {
