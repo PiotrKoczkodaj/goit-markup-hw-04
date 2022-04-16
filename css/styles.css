@@ -415,9 +415,6 @@ margin-right: 0;
   margin-right: 0;
   display: block;
   padding-top: 60px;
-  
-
-
 }
 .footer-list-item-paragraph
 {
@@ -442,6 +439,8 @@ margin-right: 0;
 {
   padding-bottom: 60px;
   margin-left: 0;
+  width: 261px;
+
 }
 .footer-list-item-tel-link
 {
@@ -476,10 +475,6 @@ color: var(--mark-color);
 .footer-list-item-paragraph
 {
 margin-top: 20px;
-}
-.footer-list
-{
-margin-left: 215px;
 }
 .footer-list-item-mail-link:hover {
   color: var(--mark-color);
@@ -648,7 +643,9 @@ margin-left: 24px;
 {
  
  margin-right: 0;
+
 }
+
 .third-section
 {
   
@@ -806,21 +803,24 @@ margin-left: 24px;
   line-height: 1.142;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
   
-
-}
-.right-side-of-footer
-{
- 
- 
-
 }
 .icons-footer-list-item
 {
   list-style-type: none;
- 
-  
+  fill: white;
+  margin-left: 0;
+  margin-right: 0;
+}
+.icons-footer-list
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-}
+
+
