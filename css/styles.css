@@ -312,6 +312,7 @@ ul
       box-shadow: 0px 1px 3px rgb(0 0 0 / 12%),
       0px 1px 1px rgb(0 0 0 / 14%),
       0px 2px 1px rgb(0 0 0 / 20%);
+      border-radius: 0px 0px 4px 4px;
 }
 .first-block .text-header
 {
@@ -371,6 +372,7 @@ margin-right: 0;
 {
   background-color: var(--white-color);
   padding-top: 30px;
+  border-radius: 4px;
   
 
 }
@@ -414,7 +416,13 @@ margin-right: 0;
   margin-bottom: 0;
   margin-right: 0;
   display: block;
-  padding-top: 60px;
+  margin-top: 60px;
+}
+.footer-list-item-right-side
+{
+  margin-left: 70px;
+  margin-right: 0;
+  list-style-type: none;
 }
 .footer-list-item-paragraph
 {
@@ -442,6 +450,11 @@ margin-right: 0;
   width: 261px;
 
 }
+.footer-list-item-phone
+{
+  margin-bottom: 60px;
+  list-style-type: none;
+}
 .footer-list-item-tel-link
 {
     font-size: 14px;
@@ -449,10 +462,7 @@ margin-right: 0;
     letter-spacing: 0.03em;
     list-style-type: none;
     text-decoration: none;
-    color: var(--third-color);
-    
-    
-    
+    color: var(--third-color); 
 }
 
 .footer-list-item-tel-link:hover
@@ -707,13 +717,9 @@ margin-left: 24px;
   fill: currentColor;
   margin-right: 10px;
 }
-use.phone
-{
-  width: 10px;
-  height: 16px;
-}
+
 .phone
-{ margin: 0;
+{ 
   width: 10px;
   height: 16px;
   fill: currentColor;
@@ -728,8 +734,16 @@ use.phone
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 94px;
+  border-radius: 4px;
 
 }
+.fourth-section
+{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 .icon-gallery-workers-list
 {
   list-style-type: none;
@@ -740,11 +754,7 @@ use.phone
 {
   margin-right: 10px;
 }
-.icon-smartphone.phone
-{
-  min-width: 10px;
-  min-height: 16px;
-}
+
 .icon-gallery-workers-list-item
 {
   width: 44px;
@@ -791,12 +801,21 @@ use.phone
   margin-left: 0;
   margin-right: 0;
 }
-
 .fourth-section-list
 {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
+  
+}
+.fourth-list-icon-four
+{
+  fill:var(--icons-fill)
+}
+.fourth-list-icon-four:hover {
+  fill: var(--mark-color)
+}
+.fourth-list-icon-four:focus {
+  fill: var(--mark-color)
 }
 .fourth-list-icon
 {
@@ -806,11 +825,24 @@ use.phone
 {
   width: 170px;
   height: 92px; 
-  border: #212121 solid 1px;
+  border: var(--icons-fill) solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  fill: var(--icons-fill);
+  
+  
+}
+.fourth-section-link:hover
+{
+border: var(--mark-color) solid 1px;
+fill: var(--mark-color);
+
+}
+.footer-list
+{
+  display: flex;
 }
 .text-footer
 {
@@ -821,8 +853,42 @@ use.phone
   text-transform: uppercase;
   width: 113px;
   height: 16px;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
-
+.portfolio-images-last:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-images-last-last:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.button-item-list:hover
+{
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+  0px 1px 2px rgba(0, 0, 0, 0.08);
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-item-list:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    0px 1px 2px rgba(0, 0, 0, 0.08);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.portfolio-images:hover
+{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-images:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .right-side-footer
 {
   width: 206px;
@@ -833,13 +899,31 @@ use.phone
   margin-right: 0;
 
 }
-
+.footer-list-item
+{
+  margin: 0;
+}
 .icons-footer-list-item
 {
   list-style-type: none;
   fill: white;
-  margin-left: 0;
-  margin-right: 0;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.icons-footer-list-item:hover
+{
+  background-color: var(--mark-color);
+  cursor: pointer;
+}
+.icons-footer-list-item:focus {
+  background-color: var(--mark-color);
+  cursor: pointer;
 }
 .icons-footer-list
 {
