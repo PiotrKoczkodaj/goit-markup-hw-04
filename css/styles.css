@@ -539,11 +539,45 @@ justify-content:center
   color: var(--white-color)
   
 }
+.link-icon-workers
+{
+  fill: var(--icons-fill);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: 0;
+  margin-right: 0;
+}
+.link-icon-workers:hover
+{
+  fill: var(--white-color)
+}
+.link-icon-workers:focus {
+  fill: var(--white-color);
+  background-color: var(--mark-color)
+}
 .button-item-first-child:focus
 {
   color: var(--mark-color);
   background-color: var(--mark-color);
   color: var(--white-color)
+}
+.link-icon-footer
+{
+  fill: var(--white-color);
+  width:44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-icon-footer:focus
+{
+  background-color: var(--mark-color)
 }
 .buttons-list .button-item 
 {
@@ -557,7 +591,6 @@ justify-content:center
   padding-bottom: 6px;
   padding-left: 22px;
   font-weight: 500;
-  margin-left: 8px;
   border: 1px solid transparent;
   border-radius:4px;
 }
@@ -762,18 +795,22 @@ margin-left: 24px;
   display: flex;
   align-items: center;
   border-radius: 50%;
+  margin-left: 0;
+  margin-right: 10px;
 
 }
 .icon-gallery-workers-list-item:hover
 {
   background-color: var(--mark-color);
   cursor: pointer;
-  fill: var(--white-color)
+  fill: var(--white-color);
 }
 .icon-gallery-workers-list
 {
   fill: var(--icons-fill);
   padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .fourth-section-header
 {
@@ -807,10 +844,7 @@ margin-left: 24px;
   margin-top: 50px;
   
 }
-.fourth-list-icon-four
-{
-  fill:var(--icons-fill)
-}
+
 .fourth-list-icon-four:hover {
   fill: var(--mark-color)
 }
@@ -830,15 +864,16 @@ margin-left: 24px;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  fill: var(--icons-fill);
-  
-  
+  fill: var(--icons-fill); 
 }
 .fourth-section-link:hover
 {
 border: var(--mark-color) solid 1px;
 fill: var(--mark-color);
-
+}
+.fourth-section-link:focus {
+  border: var(--mark-color) solid 1px;
+  fill: var(--mark-color);
 }
 .footer-list
 {
@@ -869,13 +904,13 @@ fill: var(--mark-color);
 }
 .button-item-list:hover
 {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
-  0px 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-item-list:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
-    0px 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-images:hover
